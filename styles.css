@@ -5,10 +5,15 @@
 
 html, body {
     height: 100%;
-    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     background-image: url('img/IMG_8919.webp');
     background-size: cover;
     background-position: center;
@@ -28,6 +33,7 @@ body {
     justify-content: space-between;
     background: linear-gradient(to right, #0F1E28, #1A2B3C, #A0DFF7);
     height: 100px;
+    z-index: 10;
 }
 
 .navbar_logo img{
@@ -152,13 +158,64 @@ nav ul li a:hover {
     color: blue;
 }
 
+.skillBox {
+    height: 800px;
+    width: 400px;
+    position: absolute;
+    top: 150%;
+    left: 10%;
+    color: #f3eff1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.skillsItem {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.box h3 {
+    text-align: center;
+    color: #f3eff1;
+    font-weight: bold ;
+    font-size: 30px;
+}
+
+.progress-container {
+    width: 100%;
+    background-color: #f3f3f3;
+    border-radius: 2px;
+    overflow: hidden;
+    position: relative;
+    height: 10px;
+}
+
+.progress-bar {
+    height: 100%;
+    text-align: center;
+    line-height: 20px;
+    color: white;
+    font-size: 12px;
+    transition: width 0.5s ease-in-out;
+}
+
+.normal { background-color: #1890ff; }
+
 .pageContact {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     padding: 2rem;
-    margin-top: 100px;
+    margin-top: 2000px;
     box-sizing: border-box;
 }
 
@@ -253,23 +310,17 @@ button:hover {
 
 
 footer {
-    margin-top: 32px;
-    display: flex;
-    align-items: flex-end;
-    position: absolute;
-    bottom: 0;
-    height: 50px;
-    width: 100%;
-    color: white;
     background-color: #1A2B3C;
-}
-
-footer p {
+    color: white;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    bottom: 50%;
+    width: 100%;
+    position: relative;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.2rem;
 }
