@@ -20,14 +20,13 @@ body {
     background-repeat: no-repeat;
     background-color:#0F1E28;
 }
-
 .navbar_header {
     position: fixed;
     width: 100%;
     top: 0;
-    left: 0 ;
+    left: 0;
     margin: 0;
-    padding: 0;
+    padding: 0 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -36,16 +35,42 @@ body {
     z-index: 10;
 }
 
-.navbar_logo img{
-    height: 100px;
-    width: 100px;
+.pcLogo {
+    height: 80px;
+    width: 80px;
 }
 
 .navbar_links {
-    list-style-type: none;
+    list-style: none;
     display: flex;
+    justify-content: space-around;
+    align-items: center;
     padding: 0;
-    margin: 0 0 0 auto;
+    margin: 0;
+}
+
+.navbar_links li {
+    display: flex;
+    align-items: center;
+}
+
+
+.logoDroit {
+    display: flex;
+    justify-content: right;
+    height: 100px;
+    width: 100%;
+    align-items: center;
+}
+
+.xLogo {
+    height: 50px;
+    width: 60px;
+
+}
+.avatar {
+    height: 300px;
+    border-radius: 50%;
 }
 
 
@@ -123,9 +148,10 @@ body {
     }
 
 
-    .navbar_links {
-        visibility: hidden;
+    .navBarLink {
+        display: none;
     }
+
 
 }
 
